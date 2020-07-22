@@ -33,6 +33,15 @@
  .cd span{
    color: #cccccc;
    }
+  label{
+   color: red;
+   }
+   .show{
+     display: block;
+   }
+   .hide{
+     display: none;
+   }
 /*
  body {
      background: #1E2D3B;

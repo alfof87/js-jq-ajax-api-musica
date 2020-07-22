@@ -27,25 +27,49 @@ $.ajax({
     console.log(obj);
       target.append(obj);
     }
-
     //////////////////////////////////////////////////////
   },
   error: function(error){
     console.log("error", error);
   }
 
-
 });
-
-
 }
-
+////////////BONUS////////////////////////
+function selectMusicType(){
+  var pop = {"genre": "Pop"};
+  var rock = {"genre": "Rock"};
+  var metal = {"genre": "Metal"};
+  var jazz = {"genre": "Jazz"};
+  // console.log(pop);
+  $("#pop").click(function(){
+    rock.addClass(".hide");
+    metal.addClass(".hide");
+    jazz.addClass(".hide");
+  });
+  $("#rock").click(function(){
+    pop.addClass(".hide");
+    metal.addClass(".hide");
+    jazz.addClass(".hide");
+  });
+  $("#metal").click(function(){
+    pop.addClass(".hide");
+    rock.addClass(".hide");
+    jazz.addClass(".hide");
+  });
+  $("#jazz").click(function(){
+    pop.addClass(".hide");
+    metal.addClass(".hide");
+    metal.addClass(".hide");
+  });
+}
+//////////////////////////////////////////////////////
 
 
 
 
 function init(){
 ajaxTest();
-
+selectMusicType();
 }
 $(document).ready(init);
