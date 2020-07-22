@@ -43,24 +43,24 @@ function selectMusicType(){
   var jazz = {"genre": "Jazz"};
   // console.log(pop);
   $("#pop").click(function(){
-    rock.addClass(".hide");
-    metal.addClass(".hide");
-    jazz.addClass(".hide");
+    rock.addClass("hide");
+    metal.addClass("hide");
+    jazz.addClass("hide");
   });
   $("#rock").click(function(){
-    pop.addClass(".hide");
-    metal.addClass(".hide");
-    jazz.addClass(".hide");
+    pop.addClass("hide");
+    metal.addClass("hide");
+    jazz.addClass("hide");
   });
   $("#metal").click(function(){
-    pop.addClass(".hide");
-    rock.addClass(".hide");
-    jazz.addClass(".hide");
+    pop.addClass("hide");
+    rock.addClass("hide");
+    jazz.addClass("hide");
   });
   $("#jazz").click(function(){
-    pop.addClass(".hide");
-    metal.addClass(".hide");
-    metal.addClass(".hide");
+    pop.addClass("hide");
+    metal.addClass("hide");
+    metal.addClass("hide");
   });
 }
 //////////////////////////////////////////////////////
