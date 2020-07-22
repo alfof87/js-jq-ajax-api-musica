@@ -16,12 +16,18 @@ $.ajax({
     var success = data["success"];
     var value = data["response"];
     // HANDLEBARS/////////////////////////////////////////
-    // var template = $("#music-template").html();
-    // var compiled = Handlebars.compile(template);
-    // var target = $(".cd");
-    //
-    // var musicHTML = compiled(target);
-    // target.append(musicHTML);
+    var template = $("#music-template").html();
+    var compiled = Handlebars.compile(template);
+    var target = $(".cd");
+
+    var obj = compiled({
+        "poster": "poster",
+        "title": "title",
+        "author": "author",
+        "year": "year"
+  });
+  console.log(obj);
+    target.append(obj);
     //////////////////////////////////////////////////////
   },
   error: function(error){
