@@ -18,16 +18,16 @@ $.ajax({
     // HANDLEBARS/////////////////////////////////////////
     var template = $("#music-template").html();
     var compiled = Handlebars.compile(template);
-    var target = $(".cd");
+    var target = $(".cds-container");
+    console.log(value);
+    for (var i = 0; i < value.length; i++) {
+      // value[i]
+      console.log(value[i]);
+      var obj = compiled(value[i]);
+    console.log(obj);
+      target.append(obj);
+    }
 
-    var obj = compiled({
-        "poster": "poster",
-        "title": "title",
-        "author": "author",
-        "year": "year"
-  });
-  console.log(obj);
-    target.append(obj);
     //////////////////////////////////////////////////////
   },
   error: function(error){

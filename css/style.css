@@ -3,10 +3,36 @@
      padding: 0;
      box-sizing: border-box;
  }
+ body {
+     background-image: url(../img/music.jpg);
+     background-size: cover;
+
+ }
  #logo{
    width: 50px;
    height: 50px;
  }
+ .cd img{
+   width: 250px;
+   height: 250px;
+   margin: 0 auto;
+ }
+ .cd{
+   height: 350px;
+   width: 30vw;
+   float: left;
+   margin-left: 250px;
+   margin-top: 80px;
+ }
+ .cd h3, span{
+   padding: 5px;
+ }
+ .cd h3{
+   color: white;
+   }
+ .cd span{
+   color: #cccccc;
+   }
 /*
  body {
      background: #1E2D3B;
