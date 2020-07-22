@@ -2,6 +2,7 @@
 // disposizione una decina di dischi musicali.
 // Servendoci di handlebars stampiamo tutto a schermo.
 // In questo momento non è importante la parte grafica.
+
 // Bonus: Creare una select con i seguenti generi: pop, rock,
 // metal e jazz. In base a cosa scegliamo nella select vedremo i
 // corrispondenti cd.
@@ -14,7 +15,14 @@ $.ajax({
   success: function(data){
     var success = data["success"];
     var value = data["response"];
-    // console.log("data", data);
+    // HANDLEBARS/////////////////////////////////////////
+    // var template = $("#music-template").html();
+    // var compiled = Handlebars.compile(template);
+    // var target = $(".cd");
+    //
+    // var musicHTML = compiled(target);
+    // target.append(musicHTML);
+    //////////////////////////////////////////////////////
   },
   error: function(error){
     console.log("error", error);
